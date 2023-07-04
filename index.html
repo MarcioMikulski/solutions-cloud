@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://templates.themekit.dev/execoore/?storefront=envato-elements -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solutions Cloud</title>
+    <meta name="description" content="">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="./tcc2_files/bootstrap-grid.css">
+    <link rel="stylesheet" href="./tcc2_files/style.css">
+    <link rel="stylesheet" href="./tcc2_files/glide.css">
+    <link rel="stylesheet" href="./tcc2_files/magnific-popup.css">
+    <link rel="stylesheet" href="./tcc2_files/content-box.css">
+    <link rel="stylesheet" href="./tcc2_files/contact-form.css">
+    <link rel="stylesheet" href="./tcc2_files/media-box.css">
+    <link rel="stylesheet" href="./tcc2_files/skin.css">
+    <link rel="icon" href="img/favicon.png">
+<!-- 
+    <script src="https://smtpjs.com/v3/smtp.js">
+
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+    </script> -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function enviarFormulario() {
+    // Obtém os valores dos campos do formulário
+   event.preventDefault();
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+    
+    // Configura os detalhes do email
+    var detalhesEmail = {
+        Host : "sandbox.smtp.mailtrap.io",
+    Username : "aeb99969cd159f",
+    Password : "7dd9bde5fe9ed4",
+      to: 'mugemikulski@gmail.com', // Substitua pelo seu endereço de email
+      from: email,
+      subject: 'Novo formulário de contato',
+      body: 'Nome: ' + nome + '<br>Email: ' + email + '<br>Mensagem: ' + mensagem
+    };
+    console.log(detalhesEmail);
+    
+    // Envia o email usando SMTPJS
+    Email.send(detalhesEmail)
+      .then(function(response) {
+        alert('Email enviado com sucesso!');
+      })
+      .catch(function(error) {
+        alert('Ocorreu um erro ao enviar o email.');
+        console.log(error);
+      });
+  }
+</script>
+
+    
+
+    <script type=" text/javascript">
+        function scrollToDivEmpresa() {
+            var div = document.getElementById("sobrenos");
+            div.scrollIntoView({ behavior: "smooth" });
+          }
+    </script>
+    <script type=" text/javascript">
+        function scrollToDivServicos() {
+            var div = document.getElementById("servicos");
+            div.scrollIntoView({ behavior: "smooth" });
+          }
+    </script>
+    <script type=" text/javascript">
+        function scrollToDivContato() {
+            var div = document.getElementById("contato");
+            div.scrollIntoView({ behavior: "smooth" });
+          }
+    </script>
+    <script type=" text/javascript">
+        function scrollToDivCurriculo() {
+            var div = document.getElementById("curriculo");
+            div.scrollIntoView({ behavior: "smooth" });
+          }
+    </script>
+<link id="themekit-sidebar" rel="stylesheet" type="text/css" href="css/sidebar.css" media="all"></head>
+<body class=""><div class="parallax-mirror ken-burn-center" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 668.422px; width: 1349px;"><img class="parallax-slider" src="./tcc2_files/hd-4.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 758px; width: 1349px; max-width: none;"></div>
+    <div id="preloader" style="display: none;"></div>
+    <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="#">
+                    <img class="logo-default scroll-hide" src="img/logos.png" alt="logo">
+     
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li class="dropdown">
+                        <a  href="#">Home</a>
+                      
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" onclick="scrollToDivEmpresa()">Empresa</a>
+                      
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="scrollToDivServicos()">Serviços</a>
+                      
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="scrollToDivCurriculo()">Currículos</a>
+                     <!--    <ul class="fade-in" style="transition-duration: 0ms; animation-duration: 500ms; transition-timing-function: ease; transition-delay: 0ms;">
+                            <li><a class="dropdown-item" href="djailton.pdf" 
+                                target="popup" 
+                                onclick="window.open('djailton.pdf','popup','width=600,height=600'); return false;">Emiliano</a></li>
+                               
+                                    <li><a  href="emiliano.pdf" 
+                                        target="popup" 
+                                        onclick="window.open('emiliano.pdf','popup','width=600,height=600'); return false;">Emiliano</a></li>
+                                        <li><a  href="graciela.pdf" 
+                                            target="popup" 
+                                            onclick="window.open('graciela.pdf','popup','width=600,height=600'); return false;">Graciela</a></li>
+                                          <li><a  href="leonardo.pdf" 
+                                            target="popup" 
+                                            onclick="window.open('leonardo.pdf','popup','width=600,height=600'); return false;">Leonardo</a></li>
+                                          <li><a  href="marcelus.pdf" 
+                                            target="popup" 
+                                            onclick="window.open('marcelus.pdf','popup','width=600,height=600'); return false;">Marcelus</a></li>
+                                         
+                                          <li><a  href="marcio-mikulski.pdf" 
+                                            target="popup" 
+                                            onclick="window.open('marcio-mikulski.pdf','popup','width=600,height=600'); return false;">Marcio</a></li>
+                        </ul> -->
+                    </li>
+                   
+                    </li>
+                
+                    <li class="dropdown">
+                        <a href="#" onclick="scrollToDivContato()">Contatos</a>
+                       
+                    </li>
+                    
+                </ul>
+                <div class="menu-right">
+                    <div class="custom-area">
+                       Rua da Nuvem, 10.0.0.0/16<br>
+                        Escola da Nuvem, AWS
+                    </div>
+                 
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="section-image section-home-one no-padding-y" style="background-image:url(media/hd-1.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <hr class="space-lg">
+                        <h1 class="text-color-2">
+                           SERVIÇOS GERENCIADOS EM NUVEM DA AWS
+                        </h1>
+                        <div class="slider glide controls-out glide--ltr glide--slider glide--swipeable" data-options="arrows:false,nav:false,autoplay:3000,controls:out"><div data-glide-el="track" class="glide__track"><ul class="glide__slides" style="transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1874px; transform: translate3d(-628px, 0px, 0px);">
+                            <li class="glide__slide glide__slide--active" style="width: 618px; margin-right: 5px;">
+                                <h1 class="text-uppercase">Technology to power your business</h1>
+                            </li>
+                            <li class="glide__slide" style="width: 618px; margin-left: 5px; margin-right: 5px;">
+                                <h3 class="text-uppercase">Implemente, configure, faça a migração, gerencie e proteja a sua nuvem AWS com a Solutions Cloud</h5>
+                            </li>
+                           
+                        </ul></div></div>
+                       
+                      
+                        
+                        <a href="#" onclick="scrollToDivContato()" class="btn btn-border btn-sm width-190 active full-width-sm">Entre em contato conosco</a>
+                        <hr class="space-lg">
+                        <hr class="space-lg">
+                    </div>
+                    <div class="col-lg-5 hidden-md">
+                        <hr class="space-sm">
+                        <img data-anima="" data-time="1000" class="slide-image fade-bottom" src="img/man-3.png" alt="" aid="0.8083670228250839" style="position: relative; animation-duration: 1000ms; transition-timing-function: ease; transition-delay: 0ms;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base section-overflow-top">
+            <div class="container">
+               
+                <div class="row row-fit-lg" data-anima="fade-bottom" data-time="1000" style="opacity: 0;">
+                    <div class="col-lg-6">
+                        <div class="slider glide glide--ltr glide--slider glide--swipeable" data-options="arrows:true,nav:false"><div data-glide-el="track" class="glide__track"><ul class="glide__slides" style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 1060px; transform: translate3d(0px, 0px, 0px);">
+                            <li class="glide__slide glide__slide--active" style="width: 525px; margin-right: 5px;">
+                                <a class="img-box img-box-caption btn-video lightbox" href="#" data-lightbox-anima="fade-top">
+                                    <img src="./tcc2_files/image-3.jpg" alt="" style="">
+                                    <span>Solutions Cloud</span>
+                                </a>
+                            </li>
+                            
+                        </ul></div>
+                        <div class="glide__arrows" data-glide-el="controls"><button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"></button><button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"></button></div></div>
+                    </div>
+                    <div id="sobrenos" class="col-lg-6">
+                        <div class="title">
+                            <h2>Nossos valores e objetivos</h2>
+                            <p>Sobre nós</p>
+                        </div>
+                        <p>
+                            A Solutions Cloud nasceu em 2023, fundada por alunos do curso Re/Start AWS nas aulas virtuais da Escola da Nuvem.<br>
+                            Nosso maior compromisso sempre foi com o sucesso de nossos clientes. Foi assim que nós crescemos e nos tornamos parceira preferencial para projetos em Nuvem AWS.
+                        </p><p>
+                        <b>Marcio Mikulski</b> <br>
+                            <span>Founder &amp; CEO</span></p>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base section-color">
+            <div class="container">
+                <div id="servicos" class="row" data-anima="fade-bottom" data-time="1000" style="opacity: 0;">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Soluções com tecnologia AWS</h2>
+                            <p>Nossos Serviços</p>
+                        </div>
+                    </div>
+                  
+                </div>
+                <hr class="space">
+                <div class="grid-list" data-columns="3" data-columns-md="2" data-columns-sm="1" data-anima="fade-bottom" data-time="1000" style="opacity: 0;">
+                    <div class="grid-box">
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="img/image-17.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>Amazon Route 53</h2>
+                                   
+                                    <p>
+                                        Route 53 é um serviço da web altamente disponível e escalável de Sistema de Nomes de Domínio (DNS).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="img/image-16.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>Amazon CloudFront</h2>
+                                    
+                                    <p>
+                                        Entregue conteúdo com segurança, com baixa latência e altas velocidades de transferência.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="img/image-9.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>AWS WAF</h2>
+                                   
+                                    <p>
+                                        Proteja suas aplicações da Web. Monitore, bloqueie ou limite a taxa de bots comuns e generalizados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="img/image-5.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>Amazon S3</h2>
+                                   
+                                    <p>
+                                        Armazenene e recupere qualquer volume de dados de qualquer local.
+                                        Hospede um site estatico.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <div class="extra-field"></div>
+                                <a href="#" class="img-box"><img src="img/image-11.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>Amazon EC2</h2>
+                                  
+                                    <p>
+                                        Capacidade de computação segura e redimensionável para praticamente qualquer workload.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <div class="extra-field"></div>
+                                <a href="#" class="img-box"><img src="img/image-12.jpg" alt="" style=""></a>
+                                <div class="caption">
+                                    <h2>Amazon Virtual Private Cloud</h2>
+                                    
+                                    <p>
+                                        Defina e inicie recursos da AWS em uma rede virtual isolada logicamente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+
+
+        <section id="curriculo" class="section-base section-overflow-top">
+            <div class="container">
+               
+                <div  class="row" data-anima="fade-bottom" data-time="1000" style="opacity: 0;">
+                    <div class="col-lg-3">
+                        <div class="title">
+                            <h2>Nossa grande família</h2>
+                            <p>Nosso Time</p>
+                        </div>
+                        <p>
+                            Todos do nosso time são formados na escola da Nuvem e com o seu AWS Certified Cloud Practitioner
+                        </p>
+                        
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="grid-list" data-columns="3" data-columns-sm="2" data-columns-xs="1">
+                            <div class="grid-box">
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team">
+                                        <img src="img/user-10.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Djailton</h2>
+                                            <span>Analista de Suporte</span><br>
+                                           
+                                           
+                                            
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="Djailton.pdf" 
+  target="popup" 
+  onclick="window.open('Djailton.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team ">
+                                        <img src="img/user-9.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Emiliano Rodrigues</h2>
+                                            <span>Analista de Suporte</span>
+                                            
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="emiliano.pdf" 
+  target="popup" 
+  onclick="window.open('emiliano.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team">
+                                        <img src="img/user-3.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Graciela Sarti</h2>
+                                            <span>Analista Cloud Junior</span>
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="graciela.pdf" 
+  target="popup" 
+  onclick="window.open('graciela.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team">
+                                        <img src="img/user-2.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Leonardo Santos</h2>
+                                            <span>Analista de  dados Jr</span>
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="leonardo.pdf" 
+  target="popup" 
+  onclick="window.open('leonardo.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team">
+                                        <img src="img/user-4.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Marcelus Farias</h2>
+                                            <span>Analista de Suporte Junior</span>
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="marcelus.pdf" 
+  target="popup" 
+  onclick="window.open('marcelus.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-team">
+                                        <img src="img/user-6.jpg" alt="">
+                                        <div class="caption">
+                                            <h2>Marcio Mikulski</h2>
+                                            <span>Developer</span>
+                                            <p>
+                                                * AWS Studant;<br>* Infraestrutura;<br>* Administração de Sistemas </p>
+                                            </p>
+                                            
+                                            <button class="btn btn-xs" type="submit"  href="marcio-mikulski.pdf" 
+  target="popup" 
+  onclick="window.open('marcio-mikulski.pdf','popup','width=600,height=600'); return false;"> Meu Curriculo </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+
+
+        <section id="contato" class="section-base">
+            <div class="container">
+                <div  class="row" data-anima="fade-bottom" data-time="1000" style="opacity: 0;">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Solicite uma consulta gratuitamente <br></h2>
+                            <p>Entre em contato</p>
+                        </div>
+                        <p>
+                            Onde quer que você esteja em sua jornada para cloud, temos experiência e conhecimento para transformar o seu negócio. 
+                        </p>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="UCiFI"  class="form-box form-ajax form-ajax-wp"  >
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input id="nome" name="Name" placeholder="Name" type="text" class="input-text" required="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input id="email" name="Email" placeholder="Email" type="email" class="input-text" required="">
+                                </div>
+                            </div>
+                            <hr class="space-xs">
+                            <textarea id="mensagem" name="Message" placeholder="Message" class="input-textarea" required=""></textarea>
+                            <button class="btn btn-xs" onclick="enviarFormulario()" >Enviar</button>
+                            <div class="success-box">
+                                <div class="alert alert-success">
+                                    Congratulations. Your message has been sent successfully.
+                                </div>
+                            </div>
+                            <div class="error-box">
+                                <div class="alert alert-warning">
+                                    Error, please retry. Your message has not been sent.
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+      
+
+
+
+
+
+        
+      
+        
+       
+       
+       
+    </main>
+    <i class="scroll-top-btn scroll-top show"></i>
+    <footer class="light">
+        
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2023 Solutions Cloud - Negocios e Tecnologia by <a href="https://www.linkedin.com/in/marcio-mikulski-24536776/" target="_blank">Mikulski</a>.</span>
+                <span><a href="#" onclick="scrollToDivContato()">Entre em contato</a> | <a href="#">Politica de Privacidade</a></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="./tcc2_files/line-icons.min.css">
+        <!-- <script src="./tcc2_files/parallax.min.js.download"></script> -->
+       <!--  <script src="./tcc2_files/glide.min.js.download"></script> -->
+        <!-- <script src="./tcc2_files/magnific-popup.min.js.download"></script> -->
+        <!-- <script src="./tcc2_files/tab-accordion.js.download"></script> -->
+      <!--   <script src="./tcc2_files/imagesloaded.min.js"></script> -->
+        <!-- <script src="./tcc2_files/progress.js.download" async=""></script> -->
+        <!-- <script src="./tcc2_files/contact-form.js.download" async=""></script> -->
+        <!-- <script src="./tcc2_files/sidebar.js.download" data-setting="execoore"></script> -->
+
+        
+    </footer>
+
+</body></html>
